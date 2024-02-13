@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Todo app</title>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="to-do">
+      <div class="to-do__header">
+        <div class="row">
+          <h1 class="to-do__title">todo</h1>
+          <div class="to-do__icon">
+            <img class="icon-moon" src="images/icon-moon.svg" alt="icon-moon" />
+          </div>
+        </div>
+      </div>
+
+      <div class="to-do__create box">
+        <form action="#" id="form__create">
+          <input id="check" type="checkbox" class="create-check" />
+          <label for="check"></label>
+          <input type="text" placeholder="Create a new todo..." id="create-todo" />
+        </form>
+      </div>
+
+      <div class="box">
+        <ul class="to-do__content">
+          
+        </ul>
+        <div class="to-do__content-footer">
+          <span class="items-count content-footer__text">5 items left</span>
+          <div class="conditions">
+            <p class="conditions-text active content-footer__text">All</p>
+            <p class="conditions-text content-footer__text">Active</p>
+            <p class="conditions-text content-footer__text">Completed</p>
+          </div>
+          <span class="clear-completed content-footer__text">Clear Completed</span>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>
