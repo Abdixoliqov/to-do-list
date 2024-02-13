@@ -45,11 +45,9 @@
 //       });
 //     });
 //   }
-
 // });
 
 let liItems = "";
-
 const checkInput = document.querySelector("#check");
 checkInput.addEventListener("click", () => {
   const createTodo = document.querySelector("#create-todo");
@@ -66,7 +64,6 @@ checkInput.addEventListener("click", () => {
       <img class="item-right" src="images/icon-cross.svg" alt="cross img" />
     </div>
   </li>
-  
   `;
 
   const todoContent = document.querySelectorAll(".to-do__content");
@@ -75,13 +72,11 @@ checkInput.addEventListener("click", () => {
       elTodo.innerHTML = liItems;
     }
     const todoItems = elTodo.querySelectorAll(".to-do__content-item");
-
     todoItems.forEach((item, idx) => {
       const checkerImg = item.querySelector(".checker-img");
       const checkedImg = item.querySelector(".checked-img");
       const itemLeftImgs = item.querySelector(".item-left__imgs");
       const itemText = item.querySelector(".item-text");
-
       itemLeftImgs.addEventListener("click", () => {
         checkerImg.classList.toggle("d-none");
         checkedImg.classList.toggle("d-block");
@@ -93,7 +88,6 @@ checkInput.addEventListener("click", () => {
         item.remove();
         idx--;
       });
-
       let itemCount = document.querySelector(".items-count");
       itemCount.innerHTML = `${idx + 1} items left`;
     });
